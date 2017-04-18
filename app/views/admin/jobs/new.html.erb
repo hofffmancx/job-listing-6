@@ -1,0 +1,9 @@
+<h1> 管理员新增职位 </h1>
+
+<%= simple_form_for [:admin,@job] do |f| %>
+
+<%= f.input :title %>
+<%= f.input :description %>
+
+  <%= f.submit "管理员提交" %>
+<% end %>
