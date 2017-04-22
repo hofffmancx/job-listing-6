@@ -328,8 +328,9 @@ video {
   color: white;
   padding: 2rem;
   width: 33%;
-  margin:2rem;
-  float: right;
+  margin-top: 2rem;
+  margin-left: 12rem;
+  float:inherit;
   font-size: 2rem;
 }
 h1 {
@@ -391,3 +392,35 @@ footer {
 }
 
 //--end footer 置底部
+
+// 戴建林的搜索框
+.search-info-title {
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+  color: #0d6ded;
+  font-size: 20px;
+  text-align: center;
+}
+
+.jobs-show0 {
+  border-bottom: 1px dotted #CCC;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+.jobs-show {
+  border-bottom: 1px dotted #CCC;
+  padding: 15px;
+  font-family: PingFangSC-Medium, Arial, Helvetica, sans-serif;
+}
+
+#search-id {
+  margin-left: 250px;
+  width: 500px;
+  padding-top: 7px;
+
+}
+
+
+// ---end 戴建林搜索框
