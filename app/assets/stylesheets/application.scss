@@ -100,9 +100,9 @@
 }
 
 .navbar-default {
-     background-color: #2ecc71;  //背景颜色
+     background-color: #31708f;  //背景颜色
 
-     border-color: #212121; //边框色
+     border-color: rgba(0, 0, 0, 0.1); //边框色
 
      margin-bottom: 0; //底部 margin 不撑开距离
  }
@@ -200,7 +200,7 @@
      font-size: 20px;//btn文字大小
      letter-spacing: 3px;//调整文字间距
      border-radius: 3px;//btn圆角
-     width: 300px;//这里用指定宽度把btn拉得更长
+     width: 330px;//这里用指定宽度把btn拉得更长
  }
 
 // 设置弹窗样式
@@ -304,14 +304,15 @@
 
 //video
 video {
-    position: fixed;
-    top: -17px;
+    position: absolute;
+    //top: -17px;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    /*width: 1425px; */
+    //width: 100%;
+    overflow: hidden;
     height: auto;
-    z-index: -100;
+    z-index: -1;
     transform: translateX(-50%) translateY(-50%);
  background: url('//assets/images/p1.jpg') no-repeat;
   background-size: cover;
@@ -322,16 +323,19 @@ video {
 }
 
 #polina {
+  position: absolute;
   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
   font-weight:100;
   background: rgba(0,0,0,0.3);
   color: white;
   padding: 2rem;
-  width: 33%;
+  width: 53%;
   margin-top: 2rem;
-  margin-left: 12rem;
+  margin-left: 32rem;
   float:inherit;
   font-size: 2rem;
+  z-index: 1;
+  text-align: center;
 }
 h1 {
   font-size: 5rem;
@@ -351,6 +355,7 @@ h1 {
   border-radius: 3px;
   cursor: pointer;
   transition: .3s background;
+
 }
 #polina button:hover {
    background: rgba(0,0,0,0.5);
@@ -380,15 +385,16 @@ a:hover{
 // footer 置底
 
 footer {
-  position:fixed;
-
+  position:relative;
+  top: 460px;
   bottom:0px;
+  padding-left: 100px;
 
 }
 
 #footer-word {
-  text-align: center;
-  padding-left: 350px;
+
+  padding-left: 500px;
 }
 
 //--end footer 置底部
