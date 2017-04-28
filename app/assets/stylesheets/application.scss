@@ -20,33 +20,39 @@
  @import "font-awesome";
 
  .jumbotron {
-  background-image:url('http://elitefon.ru/pic/201503/1152x864/elitefon.ru-38760.jpg');
+  background-image:url('moscow-0-3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 110px;
+  padding-bottom: 280px;
+
 }
 
 .title {
-  background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
-  max-width: 500px;//最大宽度
-  margin-top: 200px;//和顶部拉开距离
+  background-color: rgba(250, 250, 250, 0.01);//背景颜色含透明度
+  //background-color: black;//背景颜色含透明度
+  // max-width: 800px;//最大宽度
+  margin-top: 50px;//和顶部拉开距离
   margin-bottom: 0;//这样就可以紧接息面的描述文字
   border-top-right-radius: 3px;//右上角圆边
   border-top-left-radius: 3px;//左上角圆边
+  text-align: left; // 文字居中
+
 }
 
  .jumbotron h1, .jumbotron .h1 {
      text-align: left;//文字左对齐
      color: #222;  //字体颜色
-
      padding: 50px 20px 0;//上50px，左右20px，下0
+     font-family:monospace;
  }
 
  .jumbotron p {
      margin: 0;//上下左右margin为0
-     font-size: 26px;//字体大小
-     max-width: 500px;//最大宽度
-     background-color: rgba(250, 250, 250, 0.39);//背景颜色含透明度
+     font-size: 30px;//字体大小
+     font-weight: bold;
+
+    //  max-width: 500px;//最大宽度
+     background-color: rgba(250, 250, 250, 0.01);//背景颜色含透明度
      padding: 20px;//上下左右padding为20px
      text-align:left;//文字左对齐
      color: #222;//字体颜色
@@ -59,9 +65,10 @@
 .slogan {
   margin-top: 10px;
   margin-bottom: 50px;
-  text-align: center;
   color: white;
   top: 12px;
+
+
 }
 
 .lead {
@@ -303,99 +310,97 @@
 }
 
 //video
-video {
-    position: absolute;
-    //top: -17px;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    //width: 100%;
-    overflow: hidden;
-    height: auto;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
- background: url('//assets/images/p1.jpg') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-}
-.stopfade {
-   opacity: .1;
-}
-
-#polina {
-  position: absolute;
-  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
-  font-weight:100;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  padding: 2rem;
-  width: 53%;
-  margin-top: 2rem;
-  margin-left: 32rem;
-  float:inherit;
-  font-size: 2rem;
-  z-index: 1;
-  text-align: center;
-}
-h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-  margin-top: 0;
-  letter-spacing: .3rem;
-}
-#polina button {
-  display: block;
-  width: 80%;
-  padding: .4rem;
-  border: none;
-  margin: 1rem auto;
-  font-size: 1.3rem;
-  background: rgba(255,255,255,0.23);
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: .3s background;
-
-}
-#polina button:hover {
-   background: rgba(0,0,0,0.5);
-}
-
-a {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  background:rgba(0,0,0,0.5);
-  padding: .5rem;
-  transition: .6s background;
-}
-a:hover{
-  background:rgba(0,0,0,0.9);
-}
-@media screen and (max-width: 500px) {
-  div{width:70%;}
-}
-@media screen and (max-device-width: 800px) {
-  html { background: url(//assets/images/p1.jpg) #000 no-repeat center center fixed; }
-  #bgvid { display: none; }
-}
+// video {
+//     position: absolute;
+//     //top: -17px;
+//     left: 50%;
+//     min-width: 100%;
+//     min-height: 100%;
+//     //width: 100%;
+//     overflow: hidden;
+//     height: auto;
+//     z-index: -1;
+//     transform: translateX(-50%) translateY(-50%);
+//  background: url('//assets/images/p1.jpg') no-repeat;
+//   background-size: cover;
+//   transition: 1s opacity;
+// }
+// .stopfade {
+//    opacity: .1;
+// }
+//
+// #polina {
+//   position: absolute;
+//   font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+//   font-weight:100;
+//   background: rgba(0,0,0,0.3);
+//   color: white;
+//   padding: 2rem;
+//   width: 53%;
+//   margin-top: 2rem;
+//   margin-left: 32rem;
+//   float:inherit;
+//   font-size: 2rem;
+//   z-index: 1;
+//   text-align: center;
+// }
+// h1 {
+//   font-size: 5rem;
+//   text-transform: uppercase;
+//   margin-top: 0;
+//   letter-spacing: .3rem;
+// }
+// #polina button {
+//   display: block;
+//   width: 80%;
+//   padding: .4rem;
+//   border: none;
+//   margin: 1rem auto;
+//   font-size: 1.3rem;
+//   background: rgba(255,255,255,0.23);
+//   color: #fff;
+//   border-radius: 3px;
+//   cursor: pointer;
+//   transition: .3s background;
+//
+// }
+// #polina button:hover {
+//    background: rgba(0,0,0,0.5);
+// }
+//
+// a {
+//   display: inline-block;
+//   color: #fff;
+//   text-decoration: none;
+//   background:rgba(0,0,0,0.5);
+//   padding: .5rem;
+//   transition: .6s background;
+// }
+// a:hover{
+//   background:rgba(0,0,0,0.9);
+// }
+// @media screen and (max-width: 500px) {
+//   div{width:70%;}
+// }
+// @media screen and (max-device-width: 800px) {
+//   html { background: url(//assets/images/p1.jpg) #000 no-repeat center center fixed; }
+//   #bgvid { display: none; }
+// }
 
 //  -end video
 
 // footer 置底
 
 footer {
-  position:relative;
-  top: 460px;
-  bottom:0px;
-  padding-left: 100px;
-
+  background-color: #ececec;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
-
-#footer-word {
-
-  padding-left: 500px;
-}
+//
+// #footer-word {
+//
+//   padding-left: 500px;
+// }
 
 //--end footer 置底部
 
@@ -430,3 +435,7 @@ footer {
 
 
 // ---end 戴建林搜索框
+
+.container {
+    padding: 80px 120px;
+}

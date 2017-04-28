@@ -1,24 +1,107 @@
-<div class="main-video">
-<video  poster="p1.jpg" id="bgvid" playsinline autoplay muted loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="https://www.jazzhr.com/wp-content/uploads/2016/06/Homepage-Clips-Cut.mp4" type="video/webm">
-<source src="https://www.jazzhr.com/wp-content/uploads/2016/06/Homepage-Clips-Cut.mp4" type="video/mp4">
-</video>
+<!-- landing page -->
 
+<div class="jumbotron" style="padding-bottom:280px">
+    <h1 class="title">俄语招聘信息网</h1>
+    <p class="slogan">第一个专为俄语人打造的招聘信息网站
+    <br>
+    机器搜索+人工过滤
+    <br>
+     只为您搜索最有用的信息
+     <br>
+     节约您宝贵的时间、精力！
+    </p>
+    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">浏览职位</a></p>
+  </div>
 
-<div id="polina">
-<h1>俄语招聘信息网</h1>
-<br>
-<br>
-<p>第一个专为俄语人打造的招聘信息网站</p>
-<!--<p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>-->
-<p>机器搜索+人工过滤</p>
-<p>只为您搜索最有用的信息</p>
-<p>节约您宝贵的时间、精力！</p>
-<br>
-<br>
-<p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">浏览工作 Просмотр вакансий</a></p>
+<!-- end landing page -->
+
+<!-- what can I do for you? -->
+<div id="what-do" class="container text-center">
+  <h2>我们能为您做什么？</h2>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="https://ooo.0o0.ooo/2017/04/26/5900be4d31146.jpeg" alt="work.jpeg" title="work.jpeg" />
+      <br><br>
+      <h4>俄语求职者</h4>
+      <p>站内招聘信息</p>
+      <p>互联网信息（机器搜索+人工过滤）</p>
+      <p>精选最有价值的信息</p>
+      <p><a href="/jobs">立即浏览</a></p>
+    </div>
+    <div class="col-sm-6">
+      <img src="https://ooo.0o0.ooo/2017/04/26/5900c2ad090cd.png" alt="recruit.png" title="recruit.png" />
+      <br><br>
+      <h4>俄语招聘者</h4>
+      <p>简单的发布流程</p>
+      <p>仅需要注册就可以发布招聘信息</p>
+      <p>方便快捷</p>
+      <p>立即<%= link_to("注册", new_user_registration_path) %>/<%= link_to("登入", new_user_session_path) %></p>
+    </div>
+
+  </div>
 </div>
 
+<!-- end what can I do for you? -->
 
+
+<!-- users said -->
+<div id="user-say" class="container-fluid text-center">
+  <h2>用户之声</h2>
+<hr>
+  <div class="row">
+      <div class="col-sm-4">
+          <img src="https://ooo.0o0.ooo/2017/04/26/5900c3427422a.jpg" class="img-circle person" alt="Random Name">
+          <br><br>
+          <p>茫茫互联网信息海量</p>
+          <p>寻找一份和俄语有关的工作很费劲</p>
+          <p>“俄语招聘信息网”，帮我节约了很多时间</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——<span><em>俄语人萨沙</em></span></p>
+      </div>
+      <div class="col-sm-4">
+          <img src="https://ooo.0o0.ooo/2017/04/26/5900c3869d1a1.jpg" class="img-circle person" alt="Random Name">
+          <br><br>
+          <p>面临毕业，找工作不知道如何下手</p>
+          <p>无意中发现了“俄语招聘信息网”</p>
+          <p>帮我找到了第一份工作</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——<span><em>应届毕业生苏曼</em></span></p>
+      </div>
+      <div class="col-sm-4">
+          <img src="https://ooo.0o0.ooo/2017/04/26/5900c3b026f6c.jpg" class="img-circle person" alt="Random Name">
+          <br><br>
+          <p>招聘合适的人，也是一件很头疼的事情</p>
+          <p>有了“俄语招聘信息网”</p>
+          <p>提高了我的招聘效率</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——<span><em>某企业人事主管瓦洛佳</em></span></p>
+      </div>
+    </div>
 </div>
+<!-- end users said -->
+
+<!-- add contact container -->
+<div id="contact" class="container text-center">
+   <h3 class="text-center">联系我们</h3>
+   <p class="text-center">若您有任何意见或者建议，欢迎联系我们</p>
+   <br><br>
+   <div class="row test">
+
+     <div class="col-md-4">
+       <!-- <img src="/Users/zilongdu/job6/job-listing/app/assets/images/qrcode_qq.jpg" alt="qrcode-qq"> -->
+       <img src="https://ooo.0o0.ooo/2017/04/27/5900c43f4c357.jpg" alt="qrcode_qq.jpg" title="qrcode_qq.jpg" />
+       <br><br>
+       <p class="text-center">扫码加入QQ群</p>
+     </div>
+     <div class="col-md-4" >
+       <p class="text-left"><span class="glyphicon glyphicon-map-marker"></span>中国,湖北,武汉</p>
+         <p class="text-left"><span class="glyphicon glyphicon-envelope"></span>Email: 122517637@qq.com</p>
+     </div>
+     <div class="col-md-4" class="text-center">
+       <!-- <img src="/Users/zilongdu/job6/job-listing/app/assets/images/qrcode-wechat.png"  alt="qrcode-wechat"> -->
+       <img src="https://ooo.0o0.ooo/2017/04/27/5900c47926287.png" alt="qrcode-wechat.png" title="qrcode-wechat.png" />
+       <br><br>
+       <p class="text-center">扫码加入微信群</p>
+       <p>若无法加入，请加微信号：fengyang2008d, 验证消息：俄语招聘信息网<p>
+     </div>
+   </div>
+
+<!-- finish add contact container -->
